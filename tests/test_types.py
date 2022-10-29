@@ -3041,8 +3041,8 @@ def test_secretbytes():
     assert f.empty_password.__class__.__name__ == 'SecretBytes'
 
     # Assert str and repr are correct.
-    assert str(f.password) == "b'**********'"
-    assert str(f.empty_password) == "b''"
+    assert str(f.password) == '**********'
+    assert str(f.empty_password) == ''
     assert repr(f.password) == "SecretBytes(b'**********')"
     assert repr(f.empty_password) == "SecretBytes(b'')"
 

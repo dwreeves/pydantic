@@ -515,6 +515,9 @@ class SecretBytes(SecretField[bytes]):
     def _display(self) -> bytes:
         return secret_display(self).encode()
 
+    def __str__(self) -> str:
+        return secret_display(self)
+
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ PAYMENT CARD TYPES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
